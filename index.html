@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Autores</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/popup-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Autores</h1>
+    </header>
+    <main>
+        <section id="busqueda">
+            <h2>Buscar Autor</h2>
+            <input type="number" id="buscar-id" placeholder="ID del autor">
+            <button id="btn-buscar">Buscar</button>
+        </section>
+        <section id="resultados">
+            <h2>Listado de Autores</h2>
+            <table id="tabla-autores">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se cargarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="mantenimiento.html" class="btn-mantenimiento">Agregar Nuevo Autor</a>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <p id="popup-message"></p>
+            <div id="popup-buttons"></div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
