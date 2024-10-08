@@ -1,3 +1,2 @@
 Para clonar el proyecto:
-git clone https://github.com/proyecto-autores
-/git
+https://github.com/anrobe/proyecto-autores.git
