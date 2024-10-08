@@ -25,7 +25,7 @@ function cerrarPopup() {
 
 async function cargarAutor(id) {
     try {
-        const response = await fetch(`http://localhost:8087/authors/authors/getId/${id}`);
+        const response = await fetch(`http://localhost:80/authors/authors/getId/${id}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -49,7 +49,7 @@ async function guardarAutor(event) {
     };
 
     try {
-        const response = await fetch('http://localhost:8087/authors/authors/save', {
+        const response = await fetch('http://localhost:80/authors/authors/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

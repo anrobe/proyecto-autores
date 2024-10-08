@@ -41,7 +41,7 @@ function cerrarPopup() {
 
 async function cargarAutores() {
     try {
-        const response = await fetch('http://localhost:8087/authors/authors/getAll');
+        const response = await fetch('http://localhost:80/authors/authors/getAll');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -81,7 +81,7 @@ async function buscarAutor() {
     const id = document.getElementById('buscar-id').value;
     if (id) {
         try {
-            const response = await fetch(`http://localhost:8087/authors/authors/getId/${id}`);
+            const response = await fetch(`http://localhost:80/authors/authors/getId/${id}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -110,7 +110,7 @@ function confirmarEliminarAutor(id) {
 
 async function eliminarAutor(id) {
     try {
-        const response = await fetch(`http://localhost:8087/authors/authors/delete/${id}`, { 
+        const response = await fetch(`http://localhost:80/authors/authors/delete/${id}`, { 
             method: 'DELETE'
         });
         if (!response.ok) {
