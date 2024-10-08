@@ -1,2 +1,3 @@
-Para clonar el proyecto:
+# proyecto-autores
+## Para clonar el proyecto:
 git clone https://github.com/anrobe/proyecto-autores.git
