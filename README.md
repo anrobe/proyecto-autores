@@ -1,2 +1,3 @@
 Para clonar el proyecto:
-git clone https://github.com/git/git
+git clone https://github.com/proyecto-autores
+/git
